@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A
+        {
+           constructor (name)
+           {
+            this.name=name;
+           }
+
+        }
+        class B extends A{
+             constructor(name,bro)
+             {
+                super(name);
+                this.bro=bro;
+             }
+       
+        }
+          class C  extends B
+        {
+             constructor(name,bro,surname)
+             {
+                super(name,bro);
+                this.surname=surname;
+             }
+             getinfo()
+      {
+          console.log(this.name, this.bro ,this.surname);
+     }
+        }
+
+        let obj = new C("harshil","dude","sonar");
+        console.log(obj); 
+    </script>
+</body>
+</html>
